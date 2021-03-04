@@ -35,7 +35,7 @@ public class ArnoldEnumTypeTest {
         assertThat(planeta.equals(planeta.MERCURY)).isEqualTo(true);
         assertThat(Planeta.values()[0]).isEqualTo(planeta);
     }
-/*
+
     @Test
     public void PlanetaGetMasaTest(){
         Planeta planeta = Planeta.MERCURY;
@@ -61,7 +61,7 @@ public class ArnoldEnumTypeTest {
         double pesoHumano = 175;
         assertEquals(66.107583, planeta.MERCURY.pesoSuperficie(pesoHumano) , 0.001);
     }
-
+/*
     @Test
     public void ArrayPlanetasTerrestresTest(){
 
