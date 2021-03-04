@@ -61,7 +61,7 @@ public class ArnoldEnumTypeTest {
         double pesoHumano = 175;
         assertEquals(66.107583, planeta.MERCURY.pesoSuperficie(pesoHumano) , 0.001);
     }
-/*
+
     @Test
     public void ArrayPlanetasTerrestresTest(){
 
@@ -96,5 +96,5 @@ public class ArnoldEnumTypeTest {
         for(Planeta planeta : Planeta.getGigantesGaseosos()){
             assertThat(planeta.name()).isIn(gigantesGaseosos);
         }
-    }*/
+    }
 }

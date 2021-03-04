@@ -30,6 +30,9 @@ public enum Planeta {
         return radio;
     }
 
+    public static EnumSet<Planeta> getPlanetasTerrestres(){
+        return EnumSet.range(MERCURY, MARS);
+    }
 
     public double masaCuerpo(double pesoTerrestre){
         return pesoTerrestre / EARTH.gravedadSuperficie();
@@ -43,5 +46,8 @@ public enum Planeta {
     return G * getMasa() / (getRadio() * getRadio()); //refactorizar este cuadrado uwu
     }
 
+    public static EnumSet<Planeta> getGigantesGaseosos(){
+        return EnumSet.complementOf(getPlanetasTerrestres());
+    }
 
 }
